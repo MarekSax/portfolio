@@ -1,5 +1,5 @@
 import styles from './Hero.module.scss';
 
 export const Hero = () => {
-  return <div className={styles.hero}>Hero</div>;
+  return <div className={styles.hero}>Marek Maciejewski</div>;
 };
