@@ -5,7 +5,7 @@ export const Navbar = () => {
       <ul className={styles.navbarList}>
         <li>
           <a href="#top" className={styles.navbarLink}>
-            Marek
+            {`<Marek />`}
           </a>
         </li>
         <li>
