@@ -1,0 +1,78 @@
+@use '../../scss/variables' as *;
+
+.navbar {
+  --_animationStartsAfter: 50vh;
+  --_animationDistance: 50vh;
+  --_surfaceColorStart: transparent;
+  --_surfaceColorEnd: hsl(0 50% 90% / 0.1);
+  --_textColorStart: hsl(0 10% 90%);
+  --_textColorEnd: hsl(0 10% 90%);
+
+  --_logoAfterAnimation: none;
+
+  padding: 1rem 3rem;
+  margin-inline: auto;
+  margin-block: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--_headerWidth, auto);
+
+  color: var(--_textColorStart);
+  background-color: var(--_surfaceColorStart);
+
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+
+  @supports (animation-timeline: view()) {
+    top: -5rem;
+    border-radius: var(--_borderRadius);
+    backdrop-filter: blur(3px);
+
+    animation: stickyNav linear forwards;
+    animation-timeline: view();
+    animation-range-start: calc(100vh + var(--_animationStartsAfter));
+    animation-range-end: calc(100vh + var(--_animationStartsAfter) + var(--_animationDistance));
+  }
+
+  &List {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &Link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      color: var(--clr-primary-300);
+      text-decoration: underline;
+      text-decoration-thickness: 0.07lh;
+      text-underline-offset: 0.17lh;
+    }
+  }
+}
+
+@keyframes stickyNav {
+
+  0%,
+  100% {
+    --_headerWidth: fit-content;
+    --_logoDisplay: var(--_logoAfterAnimation);
+    --_borderRadius: 100vw;
+  }
+
+  100% {
+    top: 1.5rem;
+    color: var(--_textColorEnd);
+    background-color: var(--_surfaceColorEnd);
+    box-shadow: inset 0 0 0.5rem hsl(0 0% 100% / 0.1),
+      0 0 0.75rem hsl(0 0% 0% / 0.3);
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../scss/variables' as *;
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 51px);
+  height: calc(100dvh - 51px);
+}
