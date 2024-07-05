@@ -4,7 +4,7 @@ export const Navbar = () => {
     <div className={styles.navbar}>
       <ul className={styles.navbarList}>
         <li>
-          <a href="#top" className={styles.navbarLink}>
+          <a href="#top" className={styles.navbarHome}>
             {`<Marek />`}
           </a>
         </li>

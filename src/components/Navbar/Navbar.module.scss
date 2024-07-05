@@ -44,20 +44,59 @@
     padding: 0;
   }
 
+  &Home {
+    font-size: 20px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 5px;
+    transition: all 0.2s ease 0s;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus-visible {
+      color: #fff;
+    }
+  }
+
   &Link {
+    position: relative;
+    font-size: 20px;
     color: inherit;
     text-decoration: none;
     font-weight: 500;
+    padding: 5px 5px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 100vw;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      transition: all 0.2s ease;
+    }
 
     &:hover,
-    &:focus {
-      color: var(--clr-primary-300);
-      text-decoration: underline;
-      text-decoration-thickness: 0.07lh;
-      text-underline-offset: 0.17lh;
+    &:focus-visible {
+      color: #fff;
     }
+
+    &:hover::after,
+    &:focus-visible::after {
+      width: 100%;
+      left: 0;
+    }
+
+    // color: var(--clr-primary-300);
+    // text-decoration: underline;
+    // text-decoration-thickness: 0.07lh;
+    // text-underline-offset: 0.17lh;
   }
 }
+
 
 @keyframes stickyNav {
 

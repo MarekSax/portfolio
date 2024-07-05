@@ -6,5 +6,27 @@
   justify-content: center;
   height: calc(100vh - 51px);
   height: calc(100dvh - 51px);
-  font-size: 3rem;
+
+  &Container {
+    display: block;
+    text-align: center;
+  }
+
+  &Title {
+    font-size: 96px;
+    font-weight: 300;
+  }
+
+  &Subtitle {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &Icon {
+    font-size: 48px;
+  }
+
+  &Link {
+    color: $clr-light;
+  }
 }

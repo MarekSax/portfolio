@@ -1,3 +1,4 @@
+import { Divider } from './components/Divider';
 import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar';
 
@@ -13,6 +14,7 @@ function App() {
           molestias beatae minima. Eius aut autem sint quo labore voluptatem
           repellat mollitia.
         </div>
+        <Divider />
       </div>
     </>
   );
