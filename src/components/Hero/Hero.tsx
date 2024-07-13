@@ -7,17 +7,13 @@ export const Hero = () => {
       <div className={styles.heroContainer}>
         <h1 className={styles.heroTitle}>Marek Maciejewski</h1>
         <div className={styles.heroSubtitle}>Full-Stack Developer</div>
-        <div className={styles.heroIcon}>
-          <a
-            href="https://github.com/MarekSax"
-            target="_blank"
-            className={styles.heroLink}
-          >
-            <div>
-              <VscGithubInverted />
-            </div>
-          </a>
-        </div>
+        <a
+          href="https://github.com/MarekSax"
+          target="_blank"
+          className={styles.heroLink}
+        >
+          <VscGithubInverted />
+        </a>
       </div>
     </div>
   );

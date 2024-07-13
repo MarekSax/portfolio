@@ -6,6 +6,7 @@
   justify-content: center;
   height: calc(100vh - 51px);
   height: calc(100dvh - 51px);
+  z-index: -1;
 
   &Container {
     display: block;
@@ -24,9 +25,20 @@
 
   &Icon {
     font-size: 48px;
+
+    &:hover {
+      scale: 1.2;
+    }
   }
 
   &Link {
     color: $clr-light;
+    font-size: 64px;
+    height: 64px;
+
+    &:hover,
+    &:focus-visible {
+      color: #fff;
+    }
   }
 }

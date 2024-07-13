@@ -90,6 +90,21 @@
       left: 0;
     }
 
+    &Active {
+      color: #fff;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 100vw;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+
     // color: var(--clr-primary-300);
     // text-decoration: underline;
     // text-decoration-thickness: 0.07lh;
