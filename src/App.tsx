@@ -1,6 +1,9 @@
+import { About } from './components/About';
 import { Divider } from './components/Divider';
 import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
 
 function App() {
   return (
@@ -8,13 +11,11 @@ function App() {
       <div className="container">
         <Navbar />
         <Hero />
-        <div className="second" id="second">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          obcaecati cum voluptatem eos enim delectus esse repellendus minus
-          molestias beatae minima. Eius aut autem sint quo labore voluptatem
-          repellat mollitia.
-        </div>
+        <About />
         <Divider />
+        <Skills />
+        <Divider />
+        <Projects />
       </div>
     </>
   );
