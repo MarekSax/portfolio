@@ -1,4 +1,5 @@
 import { About } from './components/About';
+import { Divider } from './components/Divider';
 
 import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar';
@@ -10,8 +11,10 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Projects />
       <About />
+      <Divider />
+      <Projects />
+      <Divider />
       <Skills />
     </>
   );

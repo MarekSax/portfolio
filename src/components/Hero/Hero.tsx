@@ -12,7 +12,7 @@ export const Hero = () => {
           target="_blank"
           className={styles.heroLink}
         >
-          <VscGithubInverted />
+          <VscGithubInverted className={styles.heroIcon} />
         </a>
       </div>
     </section>

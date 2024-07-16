@@ -21,10 +21,12 @@
   &Subtitle {
     font-size: 24px;
     font-weight: 300;
+    margin-bottom: 1rem;
   }
 
   &Icon {
-    font-size: 48px;
+    font-size: 64px;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       scale: 1.2;
@@ -33,12 +35,5 @@
 
   &Link {
     color: $clr-light;
-    font-size: 64px;
-    height: 64px;
-
-    &:hover,
-    &:focus-visible {
-      color: #fff;
-    }
   }
 }
