@@ -1,4 +1,6 @@
+@use '../../scss/variables' as *;
+
 .skills {
   height: 100vh;
-  background-color: aquamarine;
+  background-color: $clr-gray;
 }

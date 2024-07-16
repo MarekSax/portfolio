@@ -1,4 +1,6 @@
+@use '../../scss/variables' as *;
+
 .projects {
   height: 100vh;
-  background-color: aqua;
+  background-color: $clr-gray;
 }

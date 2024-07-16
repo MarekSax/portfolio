@@ -3,7 +3,7 @@ import { VscGithubInverted } from 'react-icons/vsc';
 
 export const Hero = () => {
   return (
-    <div className={styles.hero}>
+    <div id="home" className={styles.hero}>
       <div className={styles.heroContainer}>
         <h1 className={styles.heroTitle}>Marek Maciejewski</h1>
         <div className={styles.heroSubtitle}>Full-Stack Developer</div>
