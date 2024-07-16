@@ -1,9 +1,9 @@
 import styles from './Skills.module.scss';
 const Skills = () => {
   return (
-    <div id="skills" className={styles.skills}>
+    <section id="skills" className={styles.skills}>
       Skills
-    </div>
+    </section>
   );
 };
 

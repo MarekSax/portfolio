@@ -91,18 +91,18 @@
     }
 
     &Active {
-      color: #fff;
+      color: yellow;
 
-      &::after {
-        content: '';
-        position: absolute;
-        height: 2px;
-        background-color: #fff;
-        border-radius: 100vw;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-      }
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   height: 2px;
+      //   background-color: #fff;
+      //   border-radius: 100vw;
+      //   bottom: 0;
+      //   left: 0;
+      //   width: 100%;
+      // }
     }
 
     // color: var(--clr-primary-300);
