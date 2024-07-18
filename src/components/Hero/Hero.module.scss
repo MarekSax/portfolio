@@ -1,12 +1,18 @@
 @use '../../scss/variables' as *;
+@use '../../scss/mixins' as *;
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 51px);
-  height: calc(100dvh - 51px);
+  height: 100vh;
+  height: 100dvh;
   z-index: -1;
+
+  @include larger-screen {
+    height: calc(100vh - 51px);
+    height: calc(100dvh - 51px);
+  }
 
   &Container {
     display: block;
@@ -14,14 +20,22 @@
   }
 
   &Title {
-    font-size: 96px;
+    font-size: 64px;
     font-weight: 300;
+
+    @include larger-screen {
+      font-size: 96px;
+    }
   }
 
   &Subtitle {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 1rem;
+
+    @include larger-screen {
+      font-size: 24px;
+    }
   }
 
   &Icon {

@@ -1,0 +1,38 @@
+@use '../../scss/variables' as *;
+
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  z-index: 1;
+
+  &Content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    translate: 100% 0;
+
+    background-color: $clr-black;
+    z-index: 1000;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  &Open {
+    translate: 0 0;
+  }
+
+  &Icon {
+    margin: 10px;
+  }
+}
