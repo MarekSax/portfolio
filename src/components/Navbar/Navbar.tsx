@@ -1,4 +1,5 @@
 import styles from './Navbar.module.scss';
+import { menuItems } from '../../data/MenuItems';
 import { Link } from 'react-scroll';
 export const Navbar = () => {
   return (
@@ -10,41 +11,18 @@ export const Navbar = () => {
               {`<Marek />`}
             </a>
           </li>
-          <li>
-            <Link
-              activeClass={styles.navbarLinkActive}
-              spy
-              to="projects"
-              className={styles.navbarLink}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <a href="#" className={styles.navbarLink}>
-              Resume
-            </a>
-          </li>
-          <li>
-            <Link
-              activeClass={styles.navbarLinkActive}
-              spy
-              to="about"
-              className={styles.navbarLink}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={styles.navbarLinkActive}
-              spy
-              to="skills"
-              className={styles.navbarLink}
-            >
-              Skills
-            </Link>
-          </li>
+          {menuItems.map((item) => (
+            <li key={item.title}>
+              <Link
+                activeClass={styles.navbarLinkActive}
+                spy
+                to={item.link}
+                className={styles.navbarLink}
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

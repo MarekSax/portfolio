@@ -46,7 +46,8 @@
 
   &Home {
     font-size: 20px;
-    color: inherit;
+    color: $clr-light;
+    opacity: 0.8;
     text-decoration: none;
     font-weight: 700;
     padding: 5px 5px;
@@ -55,14 +56,15 @@
 
     &:hover,
     &:focus-visible {
-      color: #fff;
+      opacity: 1;
     }
   }
 
   &Link {
     position: relative;
     font-size: 20px;
-    color: inherit;
+    color: $clr-light;
+    opacity: 0.8;
     text-decoration: none;
     font-weight: 500;
     padding: 5px 5px;
@@ -72,7 +74,7 @@
       content: '';
       position: absolute;
       height: 2px;
-      background-color: #fff;
+      background-color: $clr-light;
       border-radius: 100vw;
       bottom: 0;
       left: 50%;
@@ -82,7 +84,7 @@
 
     &:hover,
     &:focus-visible {
-      color: #fff;
+      opacity: 1;
     }
 
     &:hover::after,
@@ -92,14 +94,14 @@
     }
 
     &Active {
-      color: #fff;
+      color: $clr-light;
       cursor: pointer;
 
       &::after {
         content: '';
         position: absolute;
         height: 2px;
-        background-color: #fff;
+        background-color: $clr-light;
         border-radius: 100vw;
         bottom: 0;
         left: 0;

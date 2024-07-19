@@ -1,7 +1,7 @@
 @use '../../scss/variables' as *;
 
 .mobileMenu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   display: flex;
@@ -12,20 +12,90 @@
 
   &Content {
     display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     translate: 100% 0;
 
-    background-color: $clr-black;
+    background-color: $clr-gray;
     z-index: 1000;
 
     transition: all 0.3s ease-in-out;
+
+    &CloseBtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    &Nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &List {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      &Link {
+        position: relative;
+        font-size: 48px;
+        color: $clr-light;
+        opacity: 0.8;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 5px 5px;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          background-color: $clr-light;
+          border-radius: 100vw;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          transition: all 0.2s ease;
+        }
+
+        &:hover,
+        &:focus-visible {
+          opacity: 1;
+        }
+
+        &:hover::after,
+        &:focus-visible::after {
+          width: 100%;
+          left: 0;
+        }
+
+        &Active {
+          color: $clr-light;
+          cursor: pointer;
+
+          &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            background-color: $clr-light;
+            border-radius: 100vw;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
   &Open {
@@ -33,6 +103,15 @@
   }
 
   &Icon {
-    margin: 10px;
+    color: $clr-light;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      color: $clr-light;
+      scale: 1.1;
+      opacity: 1;
+    }
   }
 }
