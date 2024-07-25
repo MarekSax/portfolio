@@ -1,6 +1,48 @@
 @use '../../scss/variables' as *;
 
 .about {
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $clr-black;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   background-color: $clr-gray;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: -10px 10px 5px #000;
+
+  &__avatar {
+    min-width: 200px;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 0 1rem;
+
+    &>img {
+      translate: 0 -10%;
+    }
+  }
+
+  &__description {
+    font-size: 1.25rem;
+    line-height: 140%;
+    max-width: 65ch;
+    // text-align: justify;
+
+    &>h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
 }
