@@ -44,7 +44,7 @@ export const MobileMenu = () => {
             <li>
               <a
                 href="#"
-                className={styles.mobileMenuContentNavLink}
+                className={styles.mobileMenuContentNavHome}
                 onClick={closeMenu}
               >
                 {`<Marek />`}

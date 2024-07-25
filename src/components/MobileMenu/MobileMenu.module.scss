@@ -40,7 +40,26 @@
       align-items: center;
       justify-content: center;
 
+      &Home {
+        font-size: 36px;
+        color: $clr-light;
+        opacity: 0.8;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 5px 5px;
+        transition: all 0.2s ease 0s;
+        border-radius: 5px;
+
+        &:hover,
+        &:focus-visible {
+          opacity: 1;
+        }
+      }
+
       &List {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -48,23 +67,23 @@
 
       &Link {
         position: relative;
-        font-size: 48px;
+        font-size: 36px;
         color: $clr-light;
         opacity: 0.8;
         text-decoration: none;
         font-weight: 500;
-        padding: 5px 5px;
+        padding: 5px 10px;
         cursor: pointer;
 
         &::after {
           content: '';
           position: absolute;
-          height: 2px;
+          height: 0;
           background-color: $clr-light;
           border-radius: 100vw;
-          bottom: 0;
-          left: 50%;
-          width: 0;
+          bottom: 50%;
+          left: 0;
+          width: 4px;
           transition: all 0.2s ease;
         }
 
@@ -75,8 +94,8 @@
 
         &:hover::after,
         &:focus-visible::after {
-          width: 100%;
-          left: 0;
+          height: 100%;
+          bottom: 0;
         }
 
         &Active {
@@ -86,12 +105,12 @@
           &::after {
             content: '';
             position: absolute;
-            height: 2px;
+            height: 100%;
             background-color: $clr-light;
             border-radius: 100vw;
             bottom: 0;
             left: 0;
-            width: 100%;
+            width: 4px;
           }
         }
       }
