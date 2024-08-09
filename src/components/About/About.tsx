@@ -1,5 +1,5 @@
 import styles from './About.module.scss';
-import { marek } from '../../editable_stuff/pageContent';
+import { pageContent } from '../../data/pageContent';
 import parse from 'html-react-parser';
 export const About = () => {
   return (
@@ -10,7 +10,7 @@ export const About = () => {
         </div>
         <div className={styles.content__description}>
           <h1>Hi, I'm Marek</h1>
-          {parse(marek.about)}
+          {parse(pageContent.about)}
         </div>
       </article>
     </section>
