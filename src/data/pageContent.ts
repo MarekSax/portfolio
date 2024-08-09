@@ -25,7 +25,16 @@ export const pageContent: PageContent = {
       {
         title: 'Portfolio',
         description: 'Personal portfolio website',
-        technologies: ['ReactJS', 'TypeScript', 'SASS', 'HTML5'],
+        // technologies: ['ReactJS', 'TypeScript', 'SASS', 'HTML5'],
+        technologies: [
+          'ReactJS',
+          'TypeScript',
+          'SASS',
+          'HTML5',
+          'Node.js',
+          'Express',
+          'MongoDB',
+        ],
         demoUrl: 'https://mareksax.github.io/portfolio/',
         codeUrl: 'https://github.com/MarekSax/portfolio',
         img: './images/projects/portfolio.webp',

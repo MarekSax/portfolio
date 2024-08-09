@@ -1,4 +1,5 @@
 import { Project } from '../../types';
+import { TechIcon } from '../TechIcon';
 import styles from './ProjectCard.module.scss';
 
 interface ProjecCardProps {
@@ -12,7 +13,11 @@ export const ProjectCard = ({ project }: ProjecCardProps) => {
       </div>
       <h2>{project.title}</h2>
       <p>{project.description}</p>
-      <p className={styles.technologies}>{project.technologies.join(', ')}</p>
+      <div className={styles.technologies}>
+        {project.technologies.map((tech) => (
+          <TechIcon name={tech} key={tech} />
+        ))}
+      </div>
       <div className={styles.links}>
         {project.codeUrl && (
           <a href={project.codeUrl} target="_blank" rel="noreferrer noopen">
