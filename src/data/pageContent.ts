@@ -18,7 +18,7 @@ export const pageContent: PageContent = {
           'MongoDB',
         ],
         demoUrl: 'https://jolly-island-02c410b1e.5.azurestaticapps.net/',
-        img: '/images/hematorun.png',
+        img: './images/projects/hematorun.png',
       },
     ],
     personal: [
@@ -28,7 +28,7 @@ export const pageContent: PageContent = {
         technologies: ['ReactJS', 'TypeScript', 'SASS', 'HTML5'],
         demoUrl: 'https://mareksax.github.io/portfolio/',
         codeUrl: 'https://github.com/MarekSax/portfolio',
-        img: '/images/portfolio.png',
+        img: './images/projects/portfolio.webp',
       },
       {
         title: '2048',
@@ -36,7 +36,7 @@ export const pageContent: PageContent = {
         technologies: ['HTML5', 'CSS3', 'JavaScript'],
         demoUrl: 'https://mareksax.github.io/js_2048_game/',
         codeUrl: 'https://github.com/MarekSax/js_2048_game',
-        img: '/images/portfolio.png',
+        img: './images/projects/portfolio.webp',
       },
       {
         title: 'Bose',
@@ -44,7 +44,7 @@ export const pageContent: PageContent = {
         technologies: ['HTML5', 'CSS3', 'JavaScript'],
         demoUrl: 'https://mareksax.github.io/layout_miami/',
         codeUrl: 'https://github.com/MarekSax/layout_miami',
-        img: '/images/portfolio.png',
+        img: './images/projects/portfolio.webp',
       },
     ],
   },

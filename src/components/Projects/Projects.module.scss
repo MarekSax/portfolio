@@ -1,6 +1,11 @@
 @use '../../scss/variables' as *;
 
 .projects {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $clr-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
