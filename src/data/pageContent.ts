@@ -36,7 +36,7 @@ export const pageContent: PageContent = {
         technologies: ['HTML5', 'CSS3', 'JavaScript'],
         demoUrl: 'https://mareksax.github.io/js_2048_game/',
         codeUrl: 'https://github.com/MarekSax/js_2048_game',
-        img: './images/projects/portfolio.webp',
+        img: './images/projects/2048.webp',
       },
       {
         title: 'Bose',
@@ -44,7 +44,7 @@ export const pageContent: PageContent = {
         technologies: ['HTML5', 'CSS3', 'JavaScript'],
         demoUrl: 'https://mareksax.github.io/layout_miami/',
         codeUrl: 'https://github.com/MarekSax/layout_miami',
-        img: './images/projects/portfolio.webp',
+        img: './images/projects/bose.webp',
       },
     ],
   },

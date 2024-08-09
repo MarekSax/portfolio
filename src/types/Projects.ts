@@ -1,6 +1,6 @@
-import { CommercialProject, PersonalProject } from '.';
+import { Project } from '.';
 
 export interface Projects {
-  commercial: CommercialProject[];
-  personal: PersonalProject[];
+  commercial: Project[];
+  personal: Project[];
 }
