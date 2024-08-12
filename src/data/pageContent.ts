@@ -42,7 +42,7 @@ export const pageContent: PageContent = {
       },
       {
         title: 'Bose',
-        description: 'Bose landing page',
+        description: 'Responsive landing page',
         technologies: ['HTML5', 'CSS3', 'SASS', 'JavaScript'],
         demoUrl: 'https://mareksax.github.io/layout_miami/',
         codeUrl: 'https://github.com/MarekSax/layout_miami',
