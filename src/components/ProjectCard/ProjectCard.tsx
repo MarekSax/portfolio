@@ -3,9 +3,18 @@ import { TechIcon } from '../TechIcon';
 import styles from './ProjectCard.module.scss';
 
 interface ProjecCardProps {
-  project: Project;
+  project: Project | 'dummy';
 }
 export const ProjectCard = ({ project }: ProjecCardProps) => {
+  if (project === 'dummy') {
+    return (
+      <article
+        aria-hidden="true"
+        className={(styles.projectCard, styles.dummy)}
+      ></article>
+    );
+  }
+
   return (
     <article className={styles.projectCard}>
       <div className={styles.projectCard__image}>

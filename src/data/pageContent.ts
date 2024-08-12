@@ -18,23 +18,14 @@ export const pageContent: PageContent = {
           'MongoDB',
         ],
         demoUrl: 'https://jolly-island-02c410b1e.5.azurestaticapps.net/',
-        img: './images/projects/hematorun.png',
+        img: './images/projects/hematorun.webp',
       },
     ],
     personal: [
       {
         title: 'Portfolio',
         description: 'Personal portfolio website',
-        // technologies: ['ReactJS', 'TypeScript', 'SASS', 'HTML5'],
-        technologies: [
-          'ReactJS',
-          'TypeScript',
-          'SASS',
-          'HTML5',
-          'Node.js',
-          'Express',
-          'MongoDB',
-        ],
+        technologies: ['ReactJS', 'TypeScript', 'CSS3', 'SASS', 'HTML5'],
         demoUrl: 'https://mareksax.github.io/portfolio/',
         codeUrl: 'https://github.com/MarekSax/portfolio',
         img: './images/projects/portfolio.webp',
@@ -42,7 +33,7 @@ export const pageContent: PageContent = {
       {
         title: '2048',
         description: '2048 game clone',
-        technologies: ['HTML5', 'CSS3', 'JavaScript'],
+        technologies: ['HTML5', 'CSS3', 'SASS', 'JavaScript'],
         demoUrl: 'https://mareksax.github.io/js_2048_game/',
         codeUrl: 'https://github.com/MarekSax/js_2048_game',
         img: './images/projects/2048.webp',
@@ -50,7 +41,7 @@ export const pageContent: PageContent = {
       {
         title: 'Bose',
         description: 'Bose landing page',
-        technologies: ['HTML5', 'CSS3', 'JavaScript'],
+        technologies: ['HTML5', 'CSS3', 'SASS', 'JavaScript'],
         demoUrl: 'https://mareksax.github.io/layout_miami/',
         codeUrl: 'https://github.com/MarekSax/layout_miami',
         img: './images/projects/bose.webp',
