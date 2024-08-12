@@ -20,8 +20,13 @@ export const ProjectCard = ({ project }: ProjecCardProps) => {
       <div className={styles.projectCard__image}>
         <img src={project.img} alt="" loading="lazy" />
       </div>
-      <h2>{project.title}</h2>
-      <p>{project.description}</p>
+      <div className={styles.projectCard__title}>
+        <h2>{project.title}</h2>
+        {project.role && (
+          <p className={styles.projectCard__position}>{project.role}</p>
+        )}
+      </div>
+      <p className={styles.projectCard__description}>{project.description}</p>
       <div className={styles.projectCard__technologies}>
         {project.technologies.map((tech) => (
           <TechIcon name={tech} key={tech} />

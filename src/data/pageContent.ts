@@ -7,6 +7,7 @@ export const pageContent: PageContent = {
     commercial: [
       {
         title: 'Hematorun',
+        role: 'Full Stack',
         description: 'Charity run web application',
         technologies: [
           'ReactJS',
@@ -25,7 +26,7 @@ export const pageContent: PageContent = {
     personal: [
       {
         title: 'Portfolio',
-        description: 'Personal portfolio website',
+        description: 'Personal portfolio fully resposive website',
         technologies: ['ReactJS', 'TypeScript', 'HTML5', 'CSS3', 'SASS'],
         demoUrl: 'https://mareksax.github.io/portfolio/',
         codeUrl: 'https://github.com/MarekSax/portfolio',

@@ -3,7 +3,7 @@
 
 .projectCard {
   display: grid;
-  grid-template-rows: min-content min-content min-content 1fr min-content;
+  grid-template-rows: min-content min-content 1fr min-content min-content;
   gap: 1rem;
   justify-items: center;
   align-items: start;
@@ -12,11 +12,15 @@
   border-radius: 0 .5rem .5rem .5rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-  transition: all 0.2s ease-in-out;
+
+  transition: all .3s ease-in-out;
 
   @include larger-screen {
+    filter: none;
+
     &:hover {
-      transform: scale(1.05);
+      scale: 1.05;
+      filter: saturate(1.5);
     }
   }
 
@@ -25,6 +29,20 @@
     object-fit: cover;
     border-radius: 0 .5rem .5rem .5rem;
     overflow: hidden;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__position {
+    font-size: 0.75rem;
+  }
+
+  &__description {
+    text-align: center;
   }
 
   &__technologies {
