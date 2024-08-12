@@ -6,7 +6,7 @@ export const Projects = () => {
   const projectList: ProjectsType = pageContent.projects;
   return (
     <section id="projects" className={styles.projects}>
-      <div className={styles.container}>
+      <div className={styles.projects__container}>
         {projectList.personal.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}

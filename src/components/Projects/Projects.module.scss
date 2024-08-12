@@ -8,13 +8,11 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-}
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-template-rows: repeat(5, fit-content(300px));
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  &__container {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
 }
