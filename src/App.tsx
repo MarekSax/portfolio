@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { MobileMenu } from './components/MobileMenu';
+import { Footer } from './components/Footer';
 
 function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Projects />
       <Skills />
+      <Footer />
     </>
   );
 }
