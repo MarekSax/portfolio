@@ -50,4 +50,30 @@ export const pageContent: PageContent = {
       },
     ],
   },
+  skills: [
+    {
+      name: 'HTML5',
+      progress: 90,
+    },
+    {
+      name: 'CSS3',
+      progress: 50,
+    },
+    {
+      name: 'SASS',
+      progress: 25,
+    },
+    {
+      name: 'JavaScript',
+      progress: 60,
+    },
+    {
+      name: 'TypeScript',
+      progress: 80,
+    },
+    {
+      name: 'ReactJS',
+      progress: 70,
+    },
+  ],
 };

@@ -1,0 +1,33 @@
+@use '../../scss/variables' as *;
+
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+  }
+
+  &__bar {
+    width: 200px;
+    height: .5rem;
+    background-color: $clr-gray;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__progress {
+    height: 100%;
+    width: 0;
+    background-color: $clr-accent;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+  }
+}
