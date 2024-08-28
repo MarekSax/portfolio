@@ -13,7 +13,7 @@ export const Skill = ({ name, progress }: SkillProps) => {
   });
 
   return (
-    <div className={styles.skill} ref={ref}>
+    <article className={styles.skill} ref={ref}>
       <div className={styles.skill__icon}>
         <TechIcon name={name} />
       </div>
@@ -23,6 +23,6 @@ export const Skill = ({ name, progress }: SkillProps) => {
           style={inView ? { width: `${progress}%` } : {}}
         ></div>
       </div>
-    </div>
+    </article>
   );
 };
