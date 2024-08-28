@@ -1,11 +1,20 @@
 import styles from './TechIcon.module.scss';
-import { FaReact, FaSass, FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa6';
+import {
+  FaReact,
+  FaSass,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaGitAlt,
+} from 'react-icons/fa6';
 import {
   SiTypescript,
   SiJavascript,
   SiExpress,
   SiMongodb,
+  SiPostgresql,
 } from 'react-icons/si';
+import { AiOutlineConsoleSql } from 'react-icons/ai';
 
 interface TechIconProps {
   name: string;
@@ -43,6 +52,21 @@ export const TechIcon = ({ name }: TechIconProps) => {
       case 'MongoDB':
         return (
           <SiMongodb className={styles.icon} style={{ color: '#47A248' }} />
+        );
+      case 'SQL':
+        return (
+          <AiOutlineConsoleSql
+            className={styles.icon}
+            style={{ color: '#f0db4f' }}
+          />
+        );
+      case 'PostgreSQL':
+        return (
+          <SiPostgresql className={styles.icon} style={{ color: '#336791' }} />
+        );
+      case 'Git':
+        return (
+          <FaGitAlt className={styles.icon} style={{ color: '#f1502f' }} />
         );
       default:
         return null;

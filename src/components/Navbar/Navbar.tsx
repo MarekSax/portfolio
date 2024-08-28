@@ -13,14 +13,24 @@ export const Navbar = () => {
           </li>
           {menuItems.map((item) => (
             <li key={item.title}>
-              <Link
-                activeClass={styles.navbarLinkActive}
-                spy
-                to={item.link}
-                className={styles.navbarLink}
-              >
-                {item.title}
-              </Link>
+              {item.title === 'Resume' ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  className={styles.navbarLink}
+                >
+                  {item.title}
+                </a>
+              ) : (
+                <Link
+                  activeClass={styles.navbarLinkActive}
+                  spy
+                  to={item.link}
+                  className={styles.navbarLink}
+                >
+                  {item.title}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

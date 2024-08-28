@@ -5,7 +5,7 @@ export const menuItems = [
   },
   {
     title: 'Resume',
-    link: 'resume',
+    link: './Marek-Maciejewski-CV-Resume.pdf',
   },
   {
     title: 'Skills',

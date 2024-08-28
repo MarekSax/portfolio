@@ -52,15 +52,26 @@ export const MobileMenu = () => {
             </li>
             {menuItems.map((item) => (
               <li key={item.title}>
-                <Link
-                  activeClass={styles.mobileMenuContentNavLinkActive}
-                  spy
-                  to={item.link}
-                  className={styles.mobileMenuContentNavLink}
-                  onClick={closeMenu}
-                >
-                  {item.title}
-                </Link>
+                {item.title === 'Resume' ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    className={styles.mobileMenuContentNavLink}
+                    onClick={closeMenu}
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <Link
+                    activeClass={styles.mobileMenuContentNavLinkActive}
+                    spy
+                    to={item.link}
+                    className={styles.mobileMenuContentNavLink}
+                    onClick={closeMenu}
+                  >
+                    {item.title}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

@@ -52,28 +52,52 @@ export const pageContent: PageContent = {
   },
   skills: [
     {
-      name: 'HTML5',
+      name: 'JavaScript',
       progress: 90,
     },
     {
-      name: 'CSS3',
-      progress: 50,
-    },
-    {
-      name: 'SASS',
-      progress: 25,
-    },
-    {
-      name: 'JavaScript',
-      progress: 60,
-    },
-    {
       name: 'TypeScript',
-      progress: 80,
+      progress: 70,
     },
     {
       name: 'ReactJS',
+      progress: 90,
+    },
+    {
+      name: 'HTML5',
+      progress: 95,
+    },
+    {
+      name: 'CSS3',
+      progress: 90,
+    },
+    {
+      name: 'SASS',
+      progress: 85,
+    },
+    {
+      name: 'Node.js',
       progress: 70,
+    },
+    {
+      name: 'Express',
+      progress: 70,
+    },
+    {
+      name: 'SQL',
+      progress: 95,
+    },
+    {
+      name: 'MongoDB',
+      progress: 70,
+    },
+    {
+      name: 'PostgreSQL',
+      progress: 70,
+    },
+    {
+      name: 'Git',
+      progress: 90,
     },
   ],
 };
