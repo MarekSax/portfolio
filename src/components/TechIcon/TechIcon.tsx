@@ -6,6 +6,7 @@ import {
   FaCss3Alt,
   FaNodeJs,
   FaGitAlt,
+  FaVuejs,
 } from 'react-icons/fa6';
 import {
   SiTypescript,
@@ -25,6 +26,8 @@ export const TechIcon = ({ name }: TechIconProps) => {
     switch (name) {
       case 'ReactJS':
         return <FaReact className={styles.icon} style={{ color: '#61dafb' }} />;
+      case 'VueJS':
+        return <FaVuejs className={styles.icon} style={{ color: '#41b883' }} />;
       case 'SASS':
         return <FaSass className={styles.icon} style={{ color: '#cf649a' }} />;
       case 'HTML5':

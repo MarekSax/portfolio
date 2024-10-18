@@ -64,6 +64,10 @@ export const pageContent: PageContent = {
       progress: 90,
     },
     {
+      name: 'VueJS',
+      progress: 40,
+    },
+    {
       name: 'HTML5',
       progress: 95,
     },
