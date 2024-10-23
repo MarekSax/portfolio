@@ -38,8 +38,15 @@
     }
   }
 
+  &Links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
   &Icon {
-    font-size: 64px;
+    font-size: 48px;
     transition: all 0.3s ease-in-out;
 
     &:hover {
