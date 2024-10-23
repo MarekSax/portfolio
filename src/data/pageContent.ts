@@ -41,6 +41,13 @@ export const pageContent: PageContent = {
         img: './images/projects/2048.webp',
       },
       {
+        title: 'Secure Auth API',
+        description: 'Authentication service',
+        technologies: ['JavaScript', 'Node.js', 'Express', 'PostgreSQL'],
+        codeUrl: 'https://github.com/MarekSax/node-express-auth-service',
+        img: './images/projects/auth.webp',
+      },
+      {
         title: 'Bose',
         description: 'Responsive landing page',
         technologies: ['HTML5', 'CSS3', 'SASS', 'JavaScript'],
