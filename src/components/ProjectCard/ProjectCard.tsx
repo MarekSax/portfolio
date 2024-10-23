@@ -38,9 +38,11 @@ export const ProjectCard = ({ project }: ProjecCardProps) => {
             Code
           </a>
         )}
-        <a href={project.demoUrl} target="_blank" rel="noreferrer noopen">
-          Demo
-        </a>
+        {project.demoUrl && (
+          <a href={project.demoUrl} target="_blank" rel="noreferrer noopen">
+            Demo
+          </a>
+        )}
       </div>
     </article>
   );

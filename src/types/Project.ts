@@ -3,7 +3,7 @@ export interface Project {
   role?: string;
   description: string;
   technologies: string[];
-  demoUrl: string;
+  demoUrl?: string;
   codeUrl?: string;
   img: string;
 }
