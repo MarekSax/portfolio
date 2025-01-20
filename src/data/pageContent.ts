@@ -20,7 +20,7 @@ export const pageContent: PageContent = {
           'Express',
           'MongoDB',
         ],
-        demoUrl: 'https://jolly-island-02c410b1e.5.azurestaticapps.net/',
+        demoUrl: 'https://rundemo.fundacja.hematologiczna.org/',
         img: './images/projects/hematorun.webp',
       },
     ],
