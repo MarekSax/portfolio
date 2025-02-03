@@ -20,7 +20,7 @@ export const pageContent: PageContent = {
           'Express',
           'MongoDB',
         ],
-        demoUrl: 'https://rundemo.fundacja.hematologiczna.org/',
+        demoUrl: 'https://hematobieg.org',
         img: './images/projects/hematorun.webp',
       },
     ],
