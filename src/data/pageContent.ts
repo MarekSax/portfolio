@@ -23,6 +23,48 @@ export const pageContent: PageContent = {
         demoUrl: 'https://hematobieg.org',
         img: './images/projects/hematorun.webp',
       },
+      {
+        title: 'erecepta.info.pl',
+        role: 'Frontend',
+        description: 'Online prescription service',
+        technologies: [
+          'Next.js',
+          'Tailwind CSS',
+          'React Hook Form',
+          'Zod',
+          'Framer Motion',
+        ],
+        demoUrl: 'https://erecepta.info.pl/',
+        img: './images/projects/erecepta-info-pl.webp',
+      },
+      {
+        title: 'slimai.app',
+        role: 'Full Stack',
+        description: 'Landing page for an AI-powered nutrition app',
+        technologies: [
+          'Next.js',
+          'Tailwind CSS',
+          'React Hook Form',
+          'Zod',
+          'Framer Motion',
+        ],
+        demoUrl: 'https://slimai.app',
+        img: './images/projects/slimai-app.webp',
+      },
+      {
+        title: 'receptaonline.net',
+        role: 'Frontend',
+        description: 'Online prescription service',
+        technologies: [
+          'Next.js',
+          'Tailwind CSS',
+          'React Hook Form',
+          'Zod',
+          'Framer Motion',
+        ],
+        demoUrl: 'https://receptaonline.net/',
+        img: './images/projects/receptaonline-net.webp',
+      },
     ],
     personal: [
       {
@@ -98,6 +140,14 @@ export const pageContent: PageContent = {
     {
       name: 'shadcn/ui',
       progress: 90,
+    },
+    {
+      name: 'React Hook Form',
+      progress: 90,
+    },
+    {
+      name: 'Zod',
+      progress: 85,
     },
     {
       name: 'Node.js',
