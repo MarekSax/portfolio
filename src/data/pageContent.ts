@@ -65,11 +65,15 @@ export const pageContent: PageContent = {
     },
     {
       name: 'TypeScript',
-      progress: 70,
+      progress: 90,
     },
     {
       name: 'ReactJS',
-      progress: 90,
+      progress: 100,
+    },
+    {
+      name: 'Next.js',
+      progress: 100,
     },
     {
       name: 'VueJS',
@@ -77,23 +81,31 @@ export const pageContent: PageContent = {
     },
     {
       name: 'HTML5',
-      progress: 95,
+      progress: 100,
     },
     {
       name: 'CSS3',
-      progress: 90,
+      progress: 100,
     },
     {
       name: 'SASS',
-      progress: 85,
+      progress: 90,
+    },
+    {
+      name: 'Tailwind CSS',
+      progress: 95,
+    },
+    {
+      name: 'shadcn/ui',
+      progress: 90,
     },
     {
       name: 'Node.js',
-      progress: 70,
+      progress: 85,
     },
     {
       name: 'Express',
-      progress: 70,
+      progress: 85,
     },
     {
       name: 'SQL',
@@ -101,7 +113,7 @@ export const pageContent: PageContent = {
     },
     {
       name: 'MongoDB',
-      progress: 70,
+      progress: 80,
     },
     {
       name: 'PostgreSQL',

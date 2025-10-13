@@ -14,6 +14,9 @@ import {
   SiExpress,
   SiMongodb,
   SiPostgresql,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiShadcnui,
 } from 'react-icons/si';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 
@@ -71,6 +74,16 @@ export const TechIcon = ({ name }: TechIconProps) => {
         return (
           <FaGitAlt className={styles.icon} style={{ color: '#f1502f' }} />
         );
+      case 'Next.js':
+        return (
+          <SiNextdotjs className={styles.icon} style={{ color: '#fff' }} />
+        );
+      case 'Tailwind CSS':
+        return (
+          <SiTailwindcss className={styles.icon} style={{ color: '#06b6d4' }} />
+        );
+      case 'shadcn/ui':
+        return <SiShadcnui className={styles.icon} style={{ color: '#fff' }} />;
       default:
         return null;
     }
