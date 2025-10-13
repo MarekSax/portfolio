@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import styles from './MobileMenu.module.scss';
-import { IoMenu, IoClose } from 'react-icons/io5';
-import cn from 'classnames';
+import { IoClose, IoMenu } from 'react-icons/io5';
 import { Link } from 'react-scroll';
+
 import { menuItems } from '../../data/MenuItems';
+import styles from './MobileMenu.module.scss';
+import cn from 'classnames';
 
 export const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ export const MobileMenu = () => {
           onClick={handleOpenMenu}
           className={styles.mobileMenuIcon}
           aria-expanded={isMenuOpen}
-          aria-label='Open menu'
+          aria-label="Open menu"
         />
       </div>
       <div
@@ -60,14 +61,14 @@ export const MobileMenu = () => {
             size={48}
             onClick={handleCloseMenu}
             className={styles.mobileMenuIcon}
-            aria-label='Close menu'
+            aria-label="Close menu"
           />
         </div>
         <nav className={styles.mobileMenuContentNav}>
           <ul className={styles.mobileMenuContentNavList}>
             <li>
               <a
-                href='#'
+                href="#"
                 className={styles.mobileMenuContentNavHome}
                 onClick={handleCloseMenu}
               >
@@ -79,7 +80,7 @@ export const MobileMenu = () => {
                 {item.title === 'Resume' ? (
                   <a
                     href={item.link}
-                    target='_blank'
+                    target="_blank"
                     className={styles.mobileMenuContentNavLink}
                     onClick={handleCloseMenu}
                     aria-label={`Open ${item.title} in a new tab`}

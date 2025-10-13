@@ -1,26 +1,27 @@
-import styles from './TechIcon.module.scss';
+import { AiOutlineConsoleSql } from 'react-icons/ai';
 import {
+  FaCss3Alt,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
   FaReact,
   FaSass,
-  FaHtml5,
-  FaCss3Alt,
-  FaNodeJs,
-  FaGitAlt,
   FaVuejs,
 } from 'react-icons/fa6';
 import {
-  SiTypescript,
-  SiJavascript,
   SiExpress,
+  SiJavascript,
   SiMongodb,
-  SiPostgresql,
   SiNextdotjs,
-  SiTailwindcss,
-  SiShadcnui,
+  SiPostgresql,
   SiReacthookform,
+  SiShadcnui,
+  SiTailwindcss,
+  SiTypescript,
   SiZod,
 } from 'react-icons/si';
-import { AiOutlineConsoleSql } from 'react-icons/ai';
+
+import styles from './TechIcon.module.scss';
 
 interface TechIconProps {
   name: string;
@@ -100,10 +101,10 @@ export const TechIcon = ({ name }: TechIconProps) => {
       case 'Framer Motion':
         return (
           <div className={styles.motion}>
-            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 12'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 12">
               <path
-                d='M 12.838 0 L 6.12 11.989 L 0 11.989 L 5.245 2.628 C 6.059 1.176 8.088 0 9.778 0 Z M 27.846 2.997 C 27.846 1.342 29.216 0 30.906 0 C 32.596 0 33.966 1.342 33.966 2.997 C 33.966 4.653 32.596 5.995 30.906 5.995 C 29.216 5.995 27.846 4.653 27.846 2.997 Z M 13.985 0 L 20.105 0 L 13.387 11.989 L 7.267 11.989 Z M 21.214 0 L 27.334 0 L 22.088 9.362 C 21.275 10.813 19.246 11.989 17.556 11.989 L 14.496 11.989 Z'
-                fill='var(--token-04d93255-d6ab-4bbc-a194-71e004214fb0, rgb(12, 16, 18))'
+                d="M 12.838 0 L 6.12 11.989 L 0 11.989 L 5.245 2.628 C 6.059 1.176 8.088 0 9.778 0 Z M 27.846 2.997 C 27.846 1.342 29.216 0 30.906 0 C 32.596 0 33.966 1.342 33.966 2.997 C 33.966 4.653 32.596 5.995 30.906 5.995 C 29.216 5.995 27.846 4.653 27.846 2.997 Z M 13.985 0 L 20.105 0 L 13.387 11.989 L 7.267 11.989 Z M 21.214 0 L 27.334 0 L 22.088 9.362 C 21.275 10.813 19.246 11.989 17.556 11.989 L 14.496 11.989 Z"
+                fill="var(--token-04d93255-d6ab-4bbc-a194-71e004214fb0, rgb(12, 16, 18))"
               ></path>
             </svg>
           </div>

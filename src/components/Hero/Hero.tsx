@@ -1,6 +1,7 @@
-import styles from './Hero.module.scss';
-import { VscGithubInverted } from 'react-icons/vsc';
 import { FaLinkedin } from 'react-icons/fa';
+import { VscGithubInverted } from 'react-icons/vsc';
+
+import styles from './Hero.module.scss';
 
 export const Hero = () => {
   return (

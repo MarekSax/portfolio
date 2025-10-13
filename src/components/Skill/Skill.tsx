@@ -1,6 +1,7 @@
-import styles from './Skill.module.scss';
 import { useInView } from 'react-intersection-observer';
+
 import { TechIcon } from '../TechIcon';
+import styles from './Skill.module.scss';
 
 interface SkillProps {
   name: string;

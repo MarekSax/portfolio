@@ -1,5 +1,6 @@
-import { PropsWithChildren } from "react";
-import styles from "./AnimatedBackground.module.scss";
+import { PropsWithChildren } from 'react';
+
+import styles from './AnimatedBackground.module.scss';
 
 export const AnimatedBackground = ({ children }: PropsWithChildren) => {
   return (

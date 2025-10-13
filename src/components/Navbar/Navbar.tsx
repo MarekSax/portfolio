@@ -1,6 +1,8 @@
-import styles from './Navbar.module.scss';
-import { menuItems } from '../../data/MenuItems';
 import { Link } from 'react-scroll';
+
+import { menuItems } from '../../data/MenuItems';
+import styles from './Navbar.module.scss';
+
 export const Navbar = () => {
   return (
     <header className={styles.navbar}>

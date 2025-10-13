@@ -1,7 +1,8 @@
-import { ProjectCard } from '../ProjectCard';
-import styles from './Projects.module.scss';
 import { pageContent } from '../../data/pageContent';
 import type { Projects as ProjectsType } from '../../types';
+import { ProjectCard } from '../ProjectCard';
+import styles from './Projects.module.scss';
+
 export const Projects = () => {
   const projectList: ProjectsType = pageContent.projects;
   return (

@@ -1,6 +1,7 @@
-import styles from './About.module.scss';
 import { pageContent } from '../../data/pageContent';
+import styles from './About.module.scss';
 import parse from 'html-react-parser';
+
 export const About = () => {
   return (
     <section id="about" className={styles.about}>

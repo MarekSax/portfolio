@@ -1,9 +1,8 @@
 import { PageContent } from '../types';
 
 export const pageContent: PageContent = {
-  about: `Hi, I'm Marek, a Full-Stack Developer skilled in building web applications using React, Node.js, and TypeScript. I specialize in translating Figma designs into responsive and accessible web pages with HTML5, CSS3, and SASS. My expertise extends to creating dynamic frontends, integrating backends with SQL databases, and ensuring smooth functionality across the stack. Before programming, I worked as a professional musician, which honed my creativity, attention to detail, and discipline—skills I now bring to development. I'm passionate about using technology to create user-friendly solutions and constantly improving my craft in web development.
-
-`,
+  about:
+    "Hi, I'm Marek, a Full-Stack Developer skilled in building web applications using React, Node.js, and TypeScript. I specialize in translating Figma designs into responsive and accessible web pages with HTML5, CSS3, and SASS. My expertise extends to creating dynamic frontends, integrating backends with SQL databases, and ensuring smooth functionality across the stack. Before programming, I worked as a professional musician, which honed my creativity, attention to detail, and discipline—skills I now bring to development. I'm passionate about using technology to create user-friendly solutions and constantly improving my craft in web development.",
   projects: {
     commercial: [
       {

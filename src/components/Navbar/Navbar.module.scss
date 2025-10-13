@@ -33,7 +33,9 @@
     animation: stickyNav linear forwards;
     animation-timeline: view();
     animation-range-start: calc(100vh + var(--_animationStartsAfter));
-    animation-range-end: calc(100vh + var(--_animationStartsAfter) + var(--_animationDistance));
+    animation-range-end: calc(
+      100vh + var(--_animationStartsAfter) + var(--_animationDistance)
+    );
   }
 
   &List {
@@ -111,9 +113,7 @@
   }
 }
 
-
 @keyframes stickyNav {
-
   0%,
   100% {
     --_headerWidth: fit-content;
@@ -125,7 +125,8 @@
     top: 1.5rem;
     color: var(--_textColorEnd);
     background-color: var(--_surfaceColorEnd);
-    box-shadow: inset 0 0 0.5rem hsl(0 0% 100% / 0.1),
+    box-shadow:
+      inset 0 0 0.5rem hsl(0 0% 100% / 0.1),
       0 0 0.75rem hsl(0 0% 0% / 0.3);
   }
 }

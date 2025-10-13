@@ -29,7 +29,7 @@
     overflow: hidden;
     margin: 0 1rem;
 
-    &>img {
+    & > img {
       translate: 0 -10%;
     }
   }
@@ -39,7 +39,7 @@
     line-height: 160%;
     max-width: 65ch;
 
-    &>h1 {
+    & > h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
