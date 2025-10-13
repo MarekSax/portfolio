@@ -2,7 +2,7 @@ import { PageContent } from '../types';
 
 export const pageContent: PageContent = {
   about:
-    "Hi, I'm Marek, a Full-Stack Developer skilled in building web applications using React, Node.js, and TypeScript. I specialize in translating Figma designs into responsive and accessible web pages with HTML5, CSS3, and SASS. My expertise extends to creating dynamic frontends, integrating backends with SQL databases, and ensuring smooth functionality across the stack. Before programming, I worked as a professional musician, which honed my creativity, attention to detail, and discipline—skills I now bring to development. I'm passionate about using technology to create user-friendly solutions and constantly improving my craft in web development.",
+    "I'm a <strong>Full-Stack Developer</strong> with a focus on building modern web applications using <strong>Next.js, React, Node.js, TypeScript, and Tailwind CSS</strong>. I turn Figma designs into <strong>responsive, accessible, and performant web pages</strong>, and I have experience integrating backends with SQL databases to deliver smooth end-to-end functionality. <br> Before programming, I worked as a <strong>professional musician</strong>, which sharpened my <strong>creativity, discipline, and attention to detail</strong>. Skills I now channel into building <strong>elegant, user-friendly web solutions</strong>. I'm passionate about crafting scalable, maintainable code and constantly exploring new technologies to improve the user experience.",
   projects: {
     commercial: [
       {
