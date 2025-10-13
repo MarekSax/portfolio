@@ -1,5 +1,9 @@
 export const menuItems = [
   {
+    title: 'About',
+    link: 'about',
+  },
+  {
     title: 'Projects',
     link: 'projects',
   },
@@ -10,9 +14,5 @@ export const menuItems = [
   {
     title: 'Skills',
     link: 'skills',
-  },
-  {
-    title: 'About',
-    link: 'about',
   },
 ];
